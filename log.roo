@@ -1,0 +1,21 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-04-11 16:36:22
+hint
+project --topLevelPackage com.likaistentemppujenosasto.octo
+hint
+jpa setup --provider HIBERNATE --database H2_IN_MEMORY 
+hint
+// [failed] entity jpa --class ~.domain.models.user --testAutomatically 
+entity jpa --class ~.domain.OctoUser --testAutomatically 
+hint
+field string --fieldName username
+hint
+hint web mvc
+web mvc setup
+hint
+hint web mvc
+web mvc scaffold --class ~.domain.OctoUser
+web mvc scaffold --class ~.domain.OctoUserController
+hint
+hint eclipse
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-04-11 16:56:22
